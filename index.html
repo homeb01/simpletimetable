@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="timetable.js/dist/styles/timetablejs.css">
+    <link rel="stylesheet" href="timetable.js/dist/styles/demo.css">
+    <link rel="stylesheet" href="style.css">
+
+    <div class="timetable"></div>
+
+    <div class="timetable_form">
+        <h3>Agregar materia</h3>
+        <label for="fname">Nombre</label>
+        <input type="text" id="fname">
+        <button id="btnAdd">Agregar</button>
+    </div>
+    <div class="timetable_form">
+        <h3>Agregar evento</h3>
+        <label for="fsubject">Materia</label>
+        <select name="subjects" id="fsubjects" class="cbox"> </select> <br>
+
+        <label for="fstartinghour">Hora de inicio</label>
+        <select name="startinghour" id="fstartinghour">
+            <option value="00">07</option>
+            <option value="00">08</option>
+            <option value="00">09</option>
+            <option value="00">10</option>
+            <option value="00">11</option>
+            <option value="00">12</option>
+            <option value="00">13</option>
+            <option value="00">14</option>
+            <option value="00">15</option>
+            <option value="00">16</option>
+            <option value="00">17</option>
+        </select>
+        <label for="">:</label>
+        <select name="startingminute" id="fstartingminute">
+            <option value="00">00</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+        </select> <br>
+
+        <label for="fstartinghour">Hora de finalizacion</label>
+        <select name="endinghour" id="fendinghour">
+            <option value="00">07</option>
+            <option value="00">08</option>
+            <option value="00">09</option>
+            <option value="00">10</option>
+            <option value="00">11</option>
+            <option value="00">12</option>
+            <option value="00">13</option>
+            <option value="00">14</option>
+            <option value="00">15</option>
+            <option value="00">16</option>
+            <option value="00">17</option>
+        </select>
+        <label for="">:</label>
+        <select name="endingminute" id="fendingminute">
+            <option value="00">00</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+        </select>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="timetable.js/app/scripts/plugin.js"></script>
+    <script src="timetable.js/dist/scripts/timetable.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
